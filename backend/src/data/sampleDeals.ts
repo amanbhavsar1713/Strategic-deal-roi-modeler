@@ -1,1 +1,78 @@
+import { DealInput } from "../types";
 
+/**
+ * Example strategic deals. Partner names are fictional and the figures are
+ * synthetic — used to demonstrate the model, not drawn from any real account.
+ */
+export const sampleDeals: DealInput[] = [
+  {
+    dealName: "Aurora Devices — Premium Laptop Attach",
+    partnerName: "Aurora Devices",
+    partnerCategory: "OEM",
+    region: "Americas",
+    dealType: "Volume Incentive",
+    termMonths: 36,
+    rampMonths: 6,
+    committedUnits: 500_000,
+    attachRatePct: 85,
+    revenuePerUnit: 45,
+    grossMarginPct: 70,
+    upfrontInvestment: 2_000_000,
+    perUnitIncentive: 8,
+    fixedAnnualIncentive: 500_000,
+    discountRatePct: 12,
+  },
+  {
+    dealName: "Borealis Compute — Silicon Co-Engineering",
+    partnerName: "Borealis Compute",
+    partnerCategory: "Silicon",
+    region: "APAC",
+    dealType: "Strategic Investment",
+    termMonths: 48,
+    rampMonths: 12,
+    committedUnits: 1_200_000,
+    attachRatePct: 60,
+    revenuePerUnit: 28,
+    grossMarginPct: 65,
+    upfrontInvestment: 6_500_000,
+    perUnitIncentive: 6,
+    fixedAnnualIncentive: 1_200_000,
+    discountRatePct: 14,
+  },
+  {
+    dealName: "Cobalt Retail — Channel Rebate Program",
+    partnerName: "Cobalt Retail Group",
+    partnerCategory: "Distribution",
+    region: "EMEA",
+    dealType: "Rebate Program",
+    termMonths: 24,
+    rampMonths: 3,
+    committedUnits: 320_000,
+    attachRatePct: 92,
+    revenuePerUnit: 38,
+    grossMarginPct: 72,
+    upfrontInvestment: 750_000,
+    perUnitIncentive: 11,
+    fixedAnnualIncentive: 300_000,
+    discountRatePct: 11,
+  },
+  {
+    dealName: "Delta Foundry — Co-Marketing Launch",
+    partnerName: "Delta Foundry",
+    partnerCategory: "ODM",
+    region: "Greater China",
+    dealType: "Co-Marketing",
+    termMonths: 30,
+    rampMonths: 9,
+    committedUnits: 220_000,
+    attachRatePct: 55,
+    revenuePerUnit: 22,
+    grossMarginPct: 60,
+    upfrontInvestment: 1_400_000,
+    perUnitIncentive: 9,
+    fixedAnnualIncentive: 450_000,
+    discountRatePct: 13,
+  },
+];
+
+export const defaultDeal: DealInput = sampleDeals[0];
